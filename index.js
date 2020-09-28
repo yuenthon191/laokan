@@ -108,7 +108,7 @@ var options = {
         var info = JSON.parse(body);
         name = info.displayName;
         
-          if(beacon_id == "0143418b6d"){
+          if(beacon_id == "01434bd81e"){
          var msg = {
            "type": "text",
            "text": "ระบบได้บันทึกการตรวจจุดตรวจโซนออฟฟิสตลาดของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
