@@ -75,7 +75,7 @@ console.log('-----ปริ้นทั้งหมด-----' + JSON.stringify(da
 function data_enter(sende_r, beacon_id) {
 
 
-   var checktime = "https://script.google.com/macros/s/AKfycbzatcZVRzfAu5VMRRarvToWQDhCl9rZZt1DSKAXJWDvnFFjPg/exec?userId="+sende_r+"&beaconid="+beacon_id;
+   var checktime = "https://script.google.com/macros/s/AKfycbwpddcCBK4Od-TLdEN2w8wwFOrK7NTtNcPaARY/exec?userId="+sende_r+"&beaconid="+beacon_id;
  request(checktime, function (error, response, body) {
 
 })
@@ -108,77 +108,23 @@ var options = {
         var info = JSON.parse(body);
         name = info.displayName;
         
-          if(beacon_id == "01434bd81e"){
+          if(beacon_id == "0149bbdbca"){
          var msg = {
            "type": "text",
-           "text": "ระบบได้บันทึกการตรวจจุดตรวจโซนออฟฟิสตลาดของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
+           "text": "สวัสดีคุณ"+" " +name +" " + "ขณะนี้ระบบได้บันทึกข้อมูลการตรวจของคุณไว้แล้ว"
+          
+                   
 
           }; 
         reply(reToken, msg, sende_r, beacon_id);    
-         }else if(beacon_id == "01434d4bac"){
+         }else if(beacon_id == "0149bc1d35"){
          var msg = {
            "type": "text",
-           "text": "ระบบได้บันทึกการตรวจจุดตรวจร้านทุกอย่าง 20 บาทของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
+           "text": "สวัสดีคุณ"+" " +name +" " + "ขณะนี้ระบบได้บันทึกข้อมูลการตรวจของคุณไว้แล้ว"
           }; 
         reply(reToken, msg, sende_r, beacon_id);   
          }
          
-        else if(beacon_id == "0143508d2b"){
-         var msg = {
-           "type": "text",
-           "text": "ระบบได้บันทึกการตรวจจุดตรวจกาแฟพันธุ์ไทยของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
-          }; 
-        reply(reToken, msg, sende_r, beacon_id);   
-         }
-        else if(beacon_id == "014352e34a"){
-         var msg = {
-           "type": "text",
-           "text": "ระบบได้บันทึกการตรวจจุดตรวจแผงตลาดด้านหลังโซนฟู้ดคอร์ทของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
-          }; 
-        reply(reToken, msg, sende_r, beacon_id);   
-         }
-        else if(beacon_id == "0143532e18"){
-         var msg = {
-           "type": "text",
-           "text": "ระบบได้บันทึกการตรวจจุดตรวจสุขาของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
-          }; 
-        reply(reToken, msg, sende_r, beacon_id);   
-         }
-        else if(beacon_id == "0143543ac3"){
-         var msg = {
-           "type": "text",
-           "text": "ระบบได้บันทึกการตรวจจุดตรวจแผงตลาดด้านหลังโซนเสี่ยต้นหมูสดของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
-          }; 
-        reply(reToken, msg, sende_r, beacon_id);   
-         }
-        else if(beacon_id == "013762420d"){
-         var msg = {
-           "type": "text",
-           "text": "ระบบได้บันทึกการตรวจจุดของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
-          }; 
-        reply(reToken, msg, sende_r, beacon_id);   
-         }
-        else if(beacon_id == "013766da70"){
-         var msg = {
-           "type": "text",
-           "text": "ระบบได้บันทึกการตรวจจุดของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
-          }; 
-        reply(reToken, msg, sende_r, beacon_id);   
-         }
-        else if(beacon_id == "0137697c25"){
-         var msg = {
-           "type": "text",
-           "text": "ระบบได้บันทึกการตรวจจุดของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
-          }; 
-        reply(reToken, msg, sende_r, beacon_id);   
-         }
-        else if(beacon_id == "01376f1393"){
-         var msg = {
-           "type": "text",
-           "text": "ระบบได้บันทึกการตรวจจุดของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
-          }; 
-        reply(reToken, msg, sende_r, beacon_id);   
-         }
         
         
         
